@@ -34,7 +34,13 @@ Além da automação, foram analisados pontos de melhoria na experiência do usu
 
 ## Cenário de testes
 
+### Google Sheets
+
 - https://docs.google.com/spreadsheets/d/1h89o82RBVrpxbwAw8cZour2X8rCeqdXtZWRQY6iFQRo/edit?usp=sharing
+
+### Notion
+
+- https://www.notion.so/Relat-rio-de-bugs-melhoria-Certifica-o-Rubeus-316314d4c99380a4bcd4c1575fc05b8f?source=copy_link
 
 ## Tecnologias Utilizadas
 
