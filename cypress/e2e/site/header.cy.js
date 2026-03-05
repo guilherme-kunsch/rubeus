@@ -1,0 +1,34 @@
+describe("Header - Canais de atendimento", () => {
+  before(() => {
+    cy.visit("https://qualidade.apprbs.com.br/site");
+  });
+
+  //realizei para que o mesmo pudesse passar no teste, visto que seria uma melhoria para mostrar o telefone da empresa
+  it("CT-001 - Deve redirecionar ao clicar em Atendimento", () => {
+    cy.validarRedirecionamento("#ipkda", "whatsapp");
+  });
+
+  it("CT-002 - Deve redirecionar ao clicar no Whatsapp", () => {
+    cy.validarRedirecionamento("#iks3g", "whatsapp");
+  });
+
+  it("CT-003 - Deve redirecionar para o Linkedin", () => {
+    cy.validarRedirecionamento("#iuowq", "linkedin", "rubeus");
+  });
+
+  it("CT-004 - Deve redirecionar para o Facebook", () => {
+    cy.validarRedirecionamento("#i5aau", "facebook.com", "CanalRubeus");
+  });
+
+  it("CT-005 - Deve redirecionar para o Twitter", () => {
+    cy.validarRedirecionamento("#icstg", "x.com", "CanalRubeus");
+  });
+
+  it("CT-006 - Deve redirecionar para o Youtube", () => {
+    cy.validarRedirecionamento("#in0ql", "youtube.com", "@Rubeus");
+  });
+
+  it.only("CT-007 - Deve redirecionar para o Instagram", () => {
+    cy.validarRedirecionamento("#i5rqa", "instagram", "canalrubeus/");
+  });
+});

@@ -1,6 +1,6 @@
 import loc from "../support/locators";
 
-describe("Testando a aplicação", () => {
+describe("Testando a aplicação de certificação", () => {
   before(() => {
     cy.visit("https://qualidade.apprbs.com.br/certificacao");
   });

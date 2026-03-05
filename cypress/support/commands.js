@@ -29,3 +29,14 @@ Cypress.Commands.add("shouldHaveActionsForm", () => {
     expect(win.ActionsForm).to.exist;
   });
 });
+
+Cypress.Commands.add(
+  "validarRedirecionamento",
+  (seletor, dominio, identificador) => {
+    cy.get(seletor).invoke("removeAttr", "target").click();
+    cy.url().should("include", dominio);
+    if (identificador) {
+      cy.url().should("include", identificador);
+    }
+  },
+);
