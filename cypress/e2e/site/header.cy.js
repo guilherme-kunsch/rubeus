@@ -28,7 +28,19 @@ describe("Header - Canais de atendimento", () => {
     cy.validarRedirecionamento("#in0ql", "youtube.com", "@Rubeus");
   });
 
-  it.only("CT-007 - Deve redirecionar para o Instagram", () => {
+  it("CT-007 - Deve redirecionar para o Instagram", () => {
     cy.validarRedirecionamento("#i5rqa", "instagram", "canalrubeus/");
+  });
+
+  it("CT-008 - Deve redirecionar para o site institucional da Rubeus", () => {
+    cy.get("#ilmc2")
+      .should("have.attr", "href")
+      .and("include", "https://rubeus.com.br/");
+  });
+
+  it.only("CT-008 - Deve redirecionar para base de conhecimento", () => {
+    cy.get("#ier16")
+      .should("have.attr", "href")
+      .and("include", "https://crmrubeus.zendesk.com/hc/pt-br");
   });
 });
