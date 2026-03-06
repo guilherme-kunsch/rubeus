@@ -38,7 +38,7 @@ describe("Header - Canais de atendimento", () => {
       .and("include", "https://rubeus.com.br/");
   });
 
-  it.only("CT-008 - Deve redirecionar para base de conhecimento", () => {
+  it("CT-008 - Deve redirecionar para base de conhecimento", () => {
     cy.get("#ier16")
       .should("have.attr", "href")
       .and("include", "https://crmrubeus.zendesk.com/hc/pt-br");

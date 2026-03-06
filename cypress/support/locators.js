@@ -7,6 +7,10 @@ const locators = {
     BOTAO_AVANCAR:
       '[name="rbFormEtapa1"] > [name="rbActionsFormContainer"] > [name="rbBtnNext"]',
   },
+
+  FORMULARIO_SITE: {
+    BOTAO_AVANCAR: '[name="rbBtnNext"]',
+  },
 };
 
 export default locators;
