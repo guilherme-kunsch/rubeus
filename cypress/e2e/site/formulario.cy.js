@@ -70,7 +70,7 @@ describe("Enviando formulário", () => {
     cy.mensagemDeSucesso("É necessário informar a base legal");
   });
 
-  it.only("CT-021 - Enviar o formulário com números no campo nome", () => {
+  it("CT-021 - Enviar o formulário com números no campo nome", () => {
     cy.shouldHaveActionsForm();
 
     cy.preencherFormulario({

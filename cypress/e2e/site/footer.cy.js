@@ -27,7 +27,7 @@ describe("Footer - Redes Sociais", () => {
     cy.validarRedirecionamento("#iwyjp1", "whatsapp");
   });
 
-  it.only("CT-033 - Acesso ao link Política de Privacidade", () => {
+  it("CT-033 - Acesso ao link Política de Privacidade", () => {
     cy.validarRedirecionamento(
       "#i1feng",
       "rbacademy.apprbs.com.br",

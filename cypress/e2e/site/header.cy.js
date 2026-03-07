@@ -3,7 +3,6 @@ describe("Header - Canais de atendimento", () => {
     cy.visit("https://qualidade.apprbs.com.br/site");
   });
 
-  //realizei para que o mesmo pudesse passar no teste, visto que seria uma melhoria para mostrar o telefone da empresa
   it("CT-001 - Deve redirecionar ao clicar em Atendimento", () => {
     cy.validarRedirecionamento("#ipkda", "whatsapp");
   });
