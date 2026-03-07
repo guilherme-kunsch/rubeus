@@ -19,7 +19,19 @@ describe("Footer - Redes Sociais", () => {
     cy.validarRedirecionamento("#ilnvjq", "instagram", "canalrubeus/");
   });
 
-  it.only("CT-032 - Acesso ao link Institucional", () => {
+  it("CT-032 - Acesso ao link Institucional", () => {
     cy.validarRedirecionamento("#ij9km7", "rubeus.com.br", "sobre-a-rubeus/");
+  });
+
+  it("CT-033 - Acesso ao link Fale conosco", () => {
+    cy.validarRedirecionamento("#iwyjp1", "whatsapp");
+  });
+
+  it.only("CT-033 - Acesso ao link Política de Privacidade", () => {
+    cy.validarRedirecionamento(
+      "#i1feng",
+      "rbacademy.apprbs.com.br",
+      "politica-de-privacidade",
+    );
   });
 });
